@@ -28,7 +28,8 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.connect("mongodb://localhost/yelp_camp");
 //DATABASEURL for testing on goorm is set to "mongodb://localhost/yelp_camp"
 //DATABASEURL for hosting on heroku is set to mongodb+srv://Zainab:atlasdb@yelpcampcluster.t8hp0.mongodb.net/YelpcampCluster?retryWrites=true&w=majority
-//mongoose.connect("mongodb+srv://Zainab:atlasdb@yelpcampcluster.t8hp0.mongodb.net/YelpcampCluster?retryWrites=true&w=majority");
+//mongoose.connect(process.env.MONGODB_URI);
+
 
 
 //Setting bodyparser and ejs
